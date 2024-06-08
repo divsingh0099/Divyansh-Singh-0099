@@ -43,10 +43,12 @@ img {
 
 h1 {
     font-size: 3em; /* Larger font size for "Welcome to My Profile" */
+    margin: 0;
 }
 
 h2 {
     font-size: 2.5em; /* Larger font size for "About Me" and "Contact Me" */
+    margin: 20px 0; /* Add margin to avoid overlap */
 }
 
 /* Tabs styles */
@@ -124,5 +126,24 @@ footer ul li a img {
 
     footer ul li a {
         font-size: 2em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5em; /* Further adjust font size for very small screens */
+    }
+    
+    h2 {
+        font-size: 1.2em; /* Further adjust font size for very small screens */
+    }
+    
+    .tab-button {
+        font-size: 0.9em; /* Further adjust font size for very small screens */
+        padding: 8px 15px; /* Further adjust padding for very small screens */
+    }
+
+    footer ul li a {
+        font-size: 1.8em; /* Further adjust font size for very small screens */
     }
 }
